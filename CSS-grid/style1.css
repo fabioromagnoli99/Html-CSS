@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* para fazer o grid responsivo precisa mudar o 3 para autofill
+    e para nao sobrar quadros em brancos podemos usar o autofit
+    minmax para limitar o min. e max da imagem*/
+}
+
+.gallery img {
+    width: 100%;
+}
